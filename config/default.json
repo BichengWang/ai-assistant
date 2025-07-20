@@ -1,0 +1,29 @@
+{
+  "assistant": {
+    "name": "Private Assistant",
+    "version": "1.0.0",
+    "context_window": 10,
+    "max_conversation_history": 1000
+  },
+  "data": {
+    "qa_pairs_dir": "data/qa_pairs",
+    "profiles_dir": "data/profiles",
+    "knowledge_dir": "data/knowledge",
+    "checkpoints_dir": "data/checkpoints"
+  },
+  "features": {
+    "auto_learn": true,
+    "profile_tracking": true,
+    "knowledge_indexing": true,
+    "checkpoint_management": true
+  },
+  "export": {
+    "default_format": "jsonl",
+    "include_metadata": true
+  },
+  "limits": {
+    "max_document_size": 1048576,
+    "max_knowledge_entries": 10000,
+    "max_checkpoint_size": 104857600
+  }
+}
